@@ -1,0 +1,35 @@
+{
+  "disabled": false,
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get",
+        "post"
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "$return"
+    },
+    {
+      "name": "categoriestoblob",
+      "type": "blob",
+      "path": "mtcbefunction-categories-export/{DateTime}_MTCBEFunction-Categories-Export.csv",
+      "connection": "AzureWebJobsStorage",
+      "direction": "out"
+    },
+    {
+      "name": "mautoblob",
+      "type": "blob",
+      "path": "mtcbefunction-mau-export/{DateTime}_MTCBEFunction-MAU-Export.csv",
+      "connection": "AzureWebJobsStorage",
+      "direction": "out"
+    }
+  ]
+}
