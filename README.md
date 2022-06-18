@@ -24,6 +24,7 @@ This repostitory contains all relevant files corresponding to the masters thesis
 6. Install [Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/) to be able to open the Power BI file, and edit it if required. When no editing of the Power BI file is intended, it can also be uploaded to a Power BI workspace within your Microsoft tenant
 
 ### Prepare the Azure cloud environment (use case: Azure infrastructure is not existing anymore, or a re-build is planned for any other reason)
+This guide is conducted to set up the environment in Microsoft Azure. In case you prefer AWS, GPC or any other public cloud platform over Azure, please find their respective guides to set up a Python function, translator API, storage blob and the configuration of output bindings.
 1. Run through the steps from the last section: Prepare the local environment (use case: code manipulation planned).
 2. Within an Azure tenant of your liking, create a resource group with the name RESOURCEGROUPNAME.
 3. In the Azure portal, navigate to Cognitive Services | Translator, and create a new translator instance within the resource group RESOURCEGROUPNAME with a name, the region and with pricing tier of your preference (free tier suffices). Allow all networks to access, and disable the system managed identity.
