@@ -85,7 +85,7 @@ datarow.append("xpath")
 # Will mulimple elements be returned by the method defined above or not
 datarow.append(False)
 # Query which is passed to the parsing instruction defined above
-datarow.append("/html/body/div[1]/div[4]/div[2]/div[1]")
+datarow.append("/html/body/div[1]/div[3]/div[2]/div[1]")
 # Are there characters which must be removed in the returned string after the parsing or not
 datarow.append(False)
 # Unwanted character to be removed from the returned string after the parsing
